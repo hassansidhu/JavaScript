@@ -1,9 +1,11 @@
 function factorial(num) {
-    var product = 1;
-    for( var i = num; i> 1; i--) {
-        product = num * product;
+    if ( num < 0) {
+        return
     }
-    return product;
+    if (num === 0) {
+        return 1;
+    }
+    return num * factorial(num - 1 );
 
 }
 
